@@ -1,1 +1,1 @@
-# Something-like-Shogi
+# Something_like_Shogi
