@@ -21,7 +21,9 @@ class Shogi : Form {
 	}
 	public Shogi(){
 		this.Text = "Something like Shogi";
-		this.Icon = new Icon("Narigin.ico");
+		try{
+			this.Icon = new Icon("Narigin.ico");
+		}catch(System.IO.FileNotFoundException){}
 		this.MouseClick += new MouseEventHandler(MyMouseClick);
 		this.KeyPress += new KeyPressEventHandler(MyKeyPress);
 		ClientSize = new Size(577, ChipY*9+1);
