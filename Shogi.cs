@@ -334,10 +334,10 @@ class Piece{
 			sb = new SolidBrush(Color.Red);
 		}
 		if(name.Length == 1){
-			g.DrawString(name, new Font("有澤行書", 28), sb, 0, 8);
+			g.DrawString(name, new Font("メイリオ", 28), sb, 0, 8);
 		}else{
-			g.DrawString(name.Substring(0,1), new Font("有澤行書", 24), sb, 4, 0);
-			g.DrawString(name.Substring(1,1), new Font("有澤行書", 24), sb, 4, 25);
+			g.DrawString(name.Substring(0,1), new Font("メイリオ", 24), sb, 4, 0);
+			g.DrawString(name.Substring(1,1), new Font("メイリオ", 24), sb, 4, 25);
 		}
 		g.Dispose();
 		return buffer;
